@@ -55,7 +55,7 @@ Pick Theme
 
 A. If you have a LESS compiler (Tested successfully with CodeKit on Mac OSX Lion):
 
-1. Open /extras/less/overrides.less and uncomment the @import line (remove the //s) of the theme you want to use.
+1. Open /extras/themes/settings.less and uncomment the @import line (remove the //s) of the theme you want to use.
 2. Compile.
 
 B. If you don't have a LESS compiler
@@ -77,18 +77,14 @@ Install
 
 1. If you already have html (or php, aspx...) files you want to use, drop the /extras folder in your Bootstrap root. Paste this into the head of every page you want to use Kickstrap:
 <pre>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;extras/html5bp/css/style.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.css&quot;&gt;
 &lt;script src=&quot;extras/html5bp/js/libs/modernizr-2.5.3.min.js&quot;&gt;&lt;/script&gt;</pre>
 (Assuming this file is in the Bootstrap root directory. Adjust accordingly.)
 2. Add the following just before the ending &lt;body&gt; tag:
 <pre>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;window.jQuery || document.write('&lt;script src=&quot;extras/html5bp/js/libs/jquery-1.7.1.min.js&quot;&gt;&lt;\/script&gt;')&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;extras/chosen/chosen.jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;extras/html5bp/js/plugins.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;extras/html5bp/js/script.js&quot;&gt;&lt;/script&gt;  
+&lt;script&gt;window.jQuery || document.write('&lt;script src=&quot;extras/h5bp/js/libs/jquery-1.7.1.min.js&quot;&gt;&lt;\/script&gt;')&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;extras/chosen/chosen.jquery.min.js&quot;&gt;&lt;/script&gt; 
 &lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt; $(&quot;.chzn-select&quot;).chosen(); $(&quot;.chzn-select-deselect&quot;).chosen({allow_single_deselect:true}); &lt;/script&gt;
 &lt;script&gt;
   var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -97,15 +93,14 @@ Install
 &lt;/script&gt;</pre>
 (Assuming this file is in your root bootstrap directory. Adjust accordingly.)
 3. If you plan to compile with LESS, add this to the end of the /less/bootstrap.less file:
-<code>@import "../extras/less/overrides.less";<code>
-4. Choose your theme in /extras/less/overrides.less (uncomment the @import line you want to use) and compile.
+<code>@import "../extras/settings/overrides.less";<code>
+4. Choose your theme in /extras/themes/settings.less (uncomment the @import line you want to use) and compile.
 
 Optional: If you're using your own existing Bootstrap installation and really don't want to replace bootstrap.css (say you've customized it),
 remember to include the chosen library with the following lines of code near your ending body tag:
 
 <pre>&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;extras/css/chosen.min.css&quot; /&gt;
 &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;extras/chosen/chosen.jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt; $(&quot;.chzn-select&quot;).chosen(); $(&quot;.chzn-select-deselect&quot;).chosen({allow_single_deselect:true}); &lt;/script&gt;</pre>
 
 Pick Theme
