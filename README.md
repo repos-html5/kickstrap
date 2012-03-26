@@ -11,9 +11,9 @@ Last updated with Bootstrap v. 2.02
 The Extras
 ==========
 
-**<a href="http://fortawesome.github.com/Font-Awesome/#">Font Awesome</a>**
+**<a href="http://fortawesome.github.com/Font-Awesome/#">Font Awesome</a> + <a href="http://icomoon.com">IcoMoon</a>**
 
-+ Turns glyphicons into an icon font to use a variety of sizes and colors. Also adds a bunch of new icons.
++ Turns glyphicons into an icon font to use a variety of sizes and colors. Also adds a bunch of new icons from FontAwesome and IcoMoon.
 
 **<a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> Goodies**
 
@@ -25,9 +25,10 @@ Uses sample files and resources gathered and created from HTML5 Boilerplate for 
 + Optional Google Chrome Frame prompt for users of older browsers
 + Too much to mention here. More information at <a href="http://html5boilerplate.com/">H5BP Homepage</a>
 
-**<a href="http://harvesthq.github.com/chosen/">Chosen</a> from Harvest**
+**New javascript plugins**
 
-+ jQuery-powered library to stylize &lt;select&gt; boxes. (See sample.html)
++ <a href="http://harvesthq.github.com/chosen/">Chosen</a>, a jQuery-powered library to stylize &lt;select&gt; boxes. (See sample.html)
++ <a href="http://archive.plugins.jquery.com/project/jGrowl">jGrowl</a>, a Growl-like notification system for websites.
 
 **Themes**
 
