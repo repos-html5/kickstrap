@@ -42,6 +42,7 @@ Uses sample files and resources gathered and created from HTML5 Boilerplate for 
 + Check out the docs to see how much this little piece of code can do.
 
 **Some IE6 Compatibility**
+
 + I know, I know. But there are still some sites with specialized circles of clients whose users base is significantly IE6 reliant.
 + Thanks to <a href="https://github.com/empowering-communities/Bootstrap-IE6">Sharry Stowell's IE6 css/js for Bootstrap</a>, Kickstrap will display significantly better in IE6 than plain Bootstrap. 
 + Only IE7- users will download the small, additional css and js.
