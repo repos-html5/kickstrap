@@ -11,9 +11,13 @@ Last updated with Bootstrap v. 2.02
 The Extras
 ==========
 
-**<a href="http://fortawesome.github.com/Font-Awesome/#">Font Awesome</a>**
+**<a href="http://daneden.me/animate/">Animate.css</a>**
 
-+ Turns glyphicons into an icon font to use a variety of sizes and colors. Also adds a bunch of new icons.
++ "Just add water" CSS animations.
+
+**<a href="http://fortawesome.github.com/Font-Awesome/#">Font Awesome</a> + <a href="http://icomoon.com">IcoMoon</a>**
+
++ Turns glyphicons into an icon font to use a variety of sizes and colors. Also adds a bunch of new icons from FontAwesome and IcoMoon.
 
 **<a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> Goodies**
 
@@ -25,9 +29,10 @@ Uses sample files and resources gathered and created from HTML5 Boilerplate for 
 + Optional Google Chrome Frame prompt for users of older browsers
 + Too much to mention here. More information at <a href="http://html5boilerplate.com/">H5BP Homepage</a>
 
-**<a href="http://harvesthq.github.com/chosen/">Chosen</a> from Harvest**
+**New javascript plugins**
 
-+ jQuery-powered library to stylize &lt;select&gt; boxes. (See sample.html)
++ <a href="http://harvesthq.github.com/chosen/">Chosen</a>, a jQuery-powered library to stylize &lt;select&gt; boxes. (See sample.html)
++ <a href="http://archive.plugins.jquery.com/project/jGrowl">jGrowl</a>, a Growl-like notification system for websites.
 
 **Themes**
 
@@ -40,55 +45,48 @@ Uses sample files and resources gathered and created from HTML5 Boilerplate for 
 + (.oh = one half, ot = one third, tt = two thirds.)
 + Check out the docs to see how much this little piece of code can do.
 
+**Some IE6 Compatibility**
+
++ I know, I know. But there are still some sites with specialized circles of clients whose users base is significantly IE6 reliant.
++ Thanks to <a href="https://github.com/empowering-communities/Bootstrap-IE6">Sharry Stowell's IE6 css/js for Bootstrap</a>, Kickstrap will display significantly better in IE6 than plain Bootstrap. 
++ Only IE7- users will download the small, additional css and js.
+
 Quick Start
 ===========
 
 Install
 -------
 
-+ If you're starting from scratch, simply download this repository and start working in the index.html or sample.html document.
++ If you're starting from scratch, simply download this repository and start working in the index.html or sample_index.html document.
 + If you already have a Bootstrap installation running, drop the /extras folder into your Bootstrap root. Drag the sample_index.html file in /extras to your Bootstrap root and /extras/css/bootstrap(.min).css wherever you have your existing bootstrap.css file. It should be linked and ready to go.
 (If you already have HTML files you want to use, see "Advanced Setup" below.
 
 Pick Theme
 ----------
 
-A. If you have a LESS compiler (Tested successfully with CodeKit on Mac OSX Lion):
+*LESS compiler required
 
-1. Open /extras/less/overrides.less and uncomment the @import line (remove the //s) of the theme you want to use.
+1. Open /extras/themes/settings.less and uncomment the @import line (remove the //s) of the theme you want to use.
 2. Compile.
-
-B. If you don't have a LESS compiler
-
-1. If using the included index.html file, find this line and follow instructions. Themes listed above:
-<pre>&lt;!-- Want to try a different theme?
-If not using LESS compiler: Uncomment below
-and change to name of desired theme. (See docs) 	--&gt;
-&lt;!--link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;extras/css/amelia.css&quot; /--&gt;</pre>
-Otherwise, see "Pick theme" in "Advanced Setup" below.
 
 Advanced Setup
 ==============
 
-In the future, I plan to eliminate the need for advanced setup by giving users the options to opt in to the features they want, much like Bootstrap's customize page, but in lieu of keeping this project from the public, here's a slightly more complicated way to get it working for now.
+In the future, I plan to have a customized download replace the need for "Advanced Setup".
 
 Install
 -------
 
 1. If you already have html (or php, aspx...) files you want to use, drop the /extras folder in your Bootstrap root. Paste this into the head of every page you want to use Kickstrap:
 <pre>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;extras/html5bp/css/style.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.css&quot;&gt;
 &lt;script src=&quot;extras/html5bp/js/libs/modernizr-2.5.3.min.js&quot;&gt;&lt;/script&gt;</pre>
 (Assuming this file is in the Bootstrap root directory. Adjust accordingly.)
 2. Add the following just before the ending &lt;body&gt; tag:
 <pre>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;window.jQuery || document.write('&lt;script src=&quot;extras/html5bp/js/libs/jquery-1.7.1.min.js&quot;&gt;&lt;\/script&gt;')&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;extras/chosen/chosen.jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;extras/html5bp/js/plugins.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;extras/html5bp/js/script.js&quot;&gt;&lt;/script&gt;  
+&lt;script&gt;window.jQuery || document.write('&lt;script src=&quot;extras/h5bp/js/libs/jquery-1.7.1.min.js&quot;&gt;&lt;\/script&gt;')&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;extras/chosen/chosen.jquery.min.js&quot;&gt;&lt;/script&gt; 
 &lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt; $(&quot;.chzn-select&quot;).chosen(); $(&quot;.chzn-select-deselect&quot;).chosen({allow_single_deselect:true}); &lt;/script&gt;
 &lt;script&gt;
   var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -96,24 +94,21 @@ Install
   s.parentNode.insertBefore(g,s)}(document,'script'));
 &lt;/script&gt;</pre>
 (Assuming this file is in your root bootstrap directory. Adjust accordingly.)
-3. If you plan to compile with LESS, add this to the end of the /less/bootstrap.less file:
-<code>@import "../extras/less/overrides.less";<code>
-4. Choose your theme in /extras/less/overrides.less (uncomment the @import line you want to use) and compile.
+3. Add this to the end of the /less/bootstrap.less file:
+<code>@import "../extras/settings/overrides.less";<code>
+4. Choose your theme in /extras/themes/settings.less (uncomment the @import line you want to use) and compile.
 
 Optional: If you're using your own existing Bootstrap installation and really don't want to replace bootstrap.css (say you've customized it),
 remember to include the chosen library with the following lines of code near your ending body tag:
 
 <pre>&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;extras/css/chosen.min.css&quot; /&gt;
 &lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;extras/chosen/chosen.jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt; $(&quot;.chzn-select&quot;).chosen(); $(&quot;.chzn-select-deselect&quot;).chosen({allow_single_deselect:true}); &lt;/script&gt;</pre>
 
 Pick Theme
 ----------
 
-If using the included index.html file, you can follow the instructions in "Quick Setup" above. Otherwise, add a reference to the theme you want to use after the link to your default bootstrap css.
-<pre>&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.css&quot; /&gt;
-&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;extras/css/amelia.css&quot; /&gt;</pre>
+If using the included index.html file, you can follow the instructions in "Quick Setup" above.
 
 Authors
 -------
@@ -188,3 +183,8 @@ Normalize.css
 -------------
 
 + https://github.com/necolas/normalize.css/blob/master/README.md
+
+<a href="https://github.com/daneden/animate.css">Animate.css</a>
+-----------
+
++ Animate.css is licensed under the ☺ license. (http://licence.visualidiot.com/)
