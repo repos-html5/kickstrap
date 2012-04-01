@@ -11,6 +11,10 @@ Last updated with Bootstrap v. 2.02
 The Extras
 ==========
 
+**<a href="http://daneden.me/animate/">Animate.css</a>**
+
++ "Just add water" CSS animations.
+
 **<a href="http://fortawesome.github.com/Font-Awesome/#">Font Awesome</a> + <a href="http://icomoon.com">IcoMoon</a>**
 
 + Turns glyphicons into an icon font to use a variety of sizes and colors. Also adds a bunch of new icons from FontAwesome and IcoMoon.
