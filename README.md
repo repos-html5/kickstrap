@@ -190,3 +190,8 @@ Normalize.css
 -------------
 
 + https://github.com/necolas/normalize.css/blob/master/README.md
+
+<a href="https://github.com/daneden/animate.css">Animate.css</a>
+-----------
+
++ Animate.css is licensed under the ☺ license. (http://licence.visualidiot.com/)
