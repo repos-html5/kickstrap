@@ -60,24 +60,15 @@ Install
 Pick Theme
 ----------
 
-A. If you have a LESS compiler (Tested successfully with CodeKit on Mac OSX Lion):
+*LESS compiler required
 
 1. Open /extras/themes/settings.less and uncomment the @import line (remove the //s) of the theme you want to use.
 2. Compile.
 
-B. If you don't have a LESS compiler
-
-1. If using the included index.html file, find this line and follow instructions. Themes listed above:
-<pre>&lt;!-- Want to try a different theme?
-If not using LESS compiler: Uncomment below
-and change to name of desired theme. (See docs) 	--&gt;
-&lt;!--link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;extras/css/amelia.css&quot; /--&gt;</pre>
-Otherwise, see "Pick theme" in "Advanced Setup" below.
-
 Advanced Setup
 ==============
 
-In the future, I plan to eliminate the need for advanced setup by giving users the options to opt in to the features they want, much like Bootstrap's customize page, but in lieu of keeping this project from the public, here's a slightly more complicated way to get it working for now.
+In the future, I plan to have a customized download replace the need for "Advanced Setup".
 
 Install
 -------
@@ -99,7 +90,7 @@ Install
   s.parentNode.insertBefore(g,s)}(document,'script'));
 &lt;/script&gt;</pre>
 (Assuming this file is in your root bootstrap directory. Adjust accordingly.)
-3. If you plan to compile with LESS, add this to the end of the /less/bootstrap.less file:
+3. Add this to the end of the /less/bootstrap.less file:
 <code>@import "../extras/settings/overrides.less";<code>
 4. Choose your theme in /extras/themes/settings.less (uncomment the @import line you want to use) and compile.
 
@@ -113,9 +104,7 @@ remember to include the chosen library with the following lines of code near you
 Pick Theme
 ----------
 
-If using the included index.html file, you can follow the instructions in "Quick Setup" above. Otherwise, add a reference to the theme you want to use after the link to your default bootstrap css.
-<pre>&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.css&quot; /&gt;
-&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;extras/css/amelia.css&quot; /&gt;</pre>
+If using the included index.html file, you can follow the instructions in "Quick Setup" above.
 
 Authors
 -------
