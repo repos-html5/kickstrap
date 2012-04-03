@@ -8,15 +8,36 @@
 // Fredoka web font
 @import url(http://fonts.googleapis.com/css?family=Fredoka+One);
 
+// LAYOUT
+// ------
+
+[class*="span"] {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
 // TEXT
 // -----------------------------------------------------
 
-h1,h2,h3,h4,h5,a.brand {
+h1,h2,h3,h4,a.brand {
   font-weight:normal;
   font-family: 'Fredoka One', Cursive, sans-serif;
 }
-h1,h3,h5 {color:@green;}
+h1,h3 {color:@green;}
 h2,h4 {color:darken(@blue,5%);}
+h5 {
+  text-transform:uppercase;
+  color:darken(@white,40%);
+}
+
+blockquote {
+  line-height:22pt;
+  font-size:18pt;
+  small {
+    margin-top:10px;
+    font-style:italic;
+  }
+}
 
 // NAVBAR
 // -----------------------------------------------------

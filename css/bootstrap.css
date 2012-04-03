@@ -4740,23 +4740,37 @@ ol.linenums li {
     margin-left: 30px;
   }
 }
+[class*="span"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 h1,
 h2,
 h3,
 h4,
-h5,
 a.brand {
   font-weight: normal;
   font-family: 'Fredoka One', Cursive, sans-serif;
 }
 h1,
-h3,
-h5 {
+h3 {
   color: #62c729;
 }
 h2,
 h4 {
   color: #26b2af;
+}
+h5 {
+  text-transform: uppercase;
+  color: #999999;
+}
+blockquote {
+  line-height: 22pt;
+  font-size: 18pt;
+}
+blockquote small {
+  margin-top: 10px;
+  font-style: italic;
 }
 .navbar .navbar-inner {
   background-color: #2ac7c4;
