@@ -166,7 +166,8 @@
   // ICONS
   // -----
   
-  // DESTROY THE GLYPHICONS
+  //  GLYPHICON OVERRIDE (Remove this block if you want to use the default BS Glyphicon sprites.
+  //  ------------------------------------------------------------------------------------------
   
   [class^="icon-"],
   [class*=" icon-"],
@@ -183,6 +184,10 @@
   .icon-white {
     background-image: none;
   }
+  @import "../../extras/fontawesome/font-awesome.less"; 	// Using awesomefont instead of an image sprite.
+  
+  // --------------------------------------------------------------------------------------------
+  // END GLYPHICON OVERRIDE
 
 /*
 
@@ -573,7 +578,6 @@ ol.linenums li {
 }
 
   @import "theme.less";				// Kickstrap themes 
-  @import "../../extras/fontawesome/font-awesome.less"; 	// Using awesomefont instead of an image sprite.
   @import "../../extras/icomoon/icomoon.less"; 				// Turn this on if you want even more fonts from IcoMoon.
   @import "../../extras/chosen/chosen.less"; 				// Chosen for select boxes        
   
