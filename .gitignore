@@ -21,6 +21,7 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+queue.txt
 
 # Komodo
 *.komodoproject
@@ -31,3 +32,4 @@ nbproject
 .svn
 .CVS
 .idea
+queue
