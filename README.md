@@ -1,3 +1,5 @@
+Version 0.9.1 RC
+
 The Gist
 ========
 
@@ -5,7 +7,7 @@ The Gist
 
 Kickstrap uses the latest version of Twitter's bootstrap (http://twitter.github.com/bootstrap) and adds a layer of extras to create slick web applications with themes, modern html/css standards, an icon font, and progressive enhancement through javascript.
 
-Last updated with Bootstrap v. 2.02
+Last updated with Bootstrap v. 2.03
 
 The Extras
 ==========
